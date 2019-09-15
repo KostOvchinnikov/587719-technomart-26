@@ -60,9 +60,8 @@
 
 	<main>
 
-		<h1>Интернет магазин «Техномарт»</h1>
+		<h1 class="visually-hidden">Интернет магазин «Техномарт»</h1>
 		
-		<!-- Главная часть после первой проверки задания -->
 
 		<section>
 
@@ -156,6 +155,34 @@
 		</section>
 
 	</footer>
+
+	<section class="visually-hidden">
+		<h2 class="visually-hidden">Отправить письмо</h2>
+		<form action="https://echo.htmlacademy.ru"  method="post">
+			<p>
+				<label for="username">Ваше имя:</label>
+				<input type="text" id="username" name="username" value="" placeholder="Имя Фамилия">
+			</p>
+			<p>
+				<label for="email">Ваш e-mail:</label>
+				<input type="email" name="email" value="" placeholder="email@example.com">
+			</p>
+			<p>
+				<label for="letter-text">Текст письма:</label>
+				<textarea name="textarea" id="letter-text" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+			</p>	
+			<button type="submit">Отправить</button>
+		</form>
+		<button type="button">Закрыть</button>
+	</section>
+
+	<section class="visually-hidden">
+		<h2 class="visually-hidden">Как до нас добраться</h2>
+		<p>
+			<img src="img/map-large.jpg" width="940" height="446" alt="Адрес компании ул.Большая Конюшенная 19/8. г.Санкт-Петербург">
+		</p>
+		<button type="button">Закрыть</button>
+	</section>
 
   </body>
 </html>
