@@ -3,39 +3,45 @@
   <head>
     <meta charset="utf-8">
     <title>Интернет магазин «Техномарт»</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   
   <body>
 
-  	<header>
+  	<header class="main-header">
 
-  		<a><img src="img/header-logo.svg" width="109" height="19" alt="Логотип магазина «Техномарт»"></a>
+		<div class="header-top">	
+	  		<a class="main-logo" href="index.html"><img src="img/header-logo.svg" width="109" height="19" alt="Логотип магазина «Техномарт»"></a>
 
-  		<form action="https://echo.htmlacademy.ru" method="get">
-			<input type="search" placeholder="Поиск" aria-label="Поиск">
-		</form>
+	  		<form action="https://echo.htmlacademy.ru" method="get">
+				<input type="search" placeholder="Поиск" aria-label="Поиск">
+			</form>
 
 
-  		<ul>
-  			<li>
-  				<a href="#">Закладки</a>
-  			</li>
-  			<li>
-  				<a href="#">Корзина</a>
-  			</li>
-  			<li>
-  				<a href="#">Оформить заказ</a>
-  			</li>
-  		</ul>
-
+	  		<ul class="top-navigation">
+	  			<li>
+	  				<a href="#">Закладки</a>
+	  			</li>
+	  			<li>
+	  				<a href="#">Корзина</a>
+	  			</li>
+	  			<li class="checkout">
+	  				<a href="#">Оформить заказ</a>
+	  			</li>
+	  		</ul>
+		</div>
   		<p>Интернет-магазин
   		строительных материалов
   		и инструментов для ремонта</p>
+		
+		<div class="phone-container">
+  			<a href="tel:+7-812-555-05-55" class="phone">+7-812-555-05-55</a>
+		</div>
 
-  		<a href="tel:+7-812-555-05-55">+7-812-555-05-55</a>
-
-  		<p>г.Санкт-Петербург, ул.Б.Конюшенная, д.19/8</p>
+  		<p class="header-adress">г.Санкт-Петербург, ул.Б.Конюшенная, д.19/8</p>
 
   		<ul>
   			<li>
@@ -46,8 +52,8 @@
   			</li>
   		</ul>
 
-  		<nav>
-  			<ul>
+  		<nav class="main-navigation">
+  			<ul class="site-navigation">
 	  			<li><a href="index.html">Главная</a></li>
 	  			<li><a href="#">Компания</a></li>
 	  			<li><a href="catalog.html">Каталог</a></li>
@@ -63,10 +69,13 @@
 	<main>
 
 		<h1 class="visually-hidden">Интернет магазин «Техномарт»</h1>
-		
 
-		<section>
+		<section class="services">
+			<!-- Сервисы -->
+		</section>
 
+		<section class="about-us">
+	
 			<h2>Компания «Техномарт»</h2>
 
 			<p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и
@@ -81,11 +90,11 @@
 				<li>ЖелДорЭкспедиция</li>
 			</ul>
 
-			<a href="about-us.html">Подробнее о компании</a>
+			<a href="about-us.html" class="button">Подробнее о компании</a>
 		
 		</section>
 
-		<section>
+		<section class="contacts">
 
 				<h2>Контакты</h2>
 
@@ -98,19 +107,19 @@
 					
 				</figure>
 
-				 <a href="#">Заблудились? Напишите нам!</a>
+				 <a href="#" class="button">Заблудились? Напишите нам!</a>
 
 		</section>
 
 	</main>  
 
-	<footer>
+	<footer class="main-footer">
 		
 		<section>
 
-			<img src="img/footer-logo.svg" width="138" height="23" alt="Логотип магазина «Техномарт»">
+			<a href="index.html" class="footer-logo"><img src="img/footer-logo.svg" width="138" height="23" alt="Логотип магазина «Техномарт»"></a>
 
-			<ul>
+			<ul class="footer-navigation-1">
 				<li><a href="about-us.html">Компания</a></li>
 				<li><a href="news.html">Новости</a></li>
 				<li><a href="catalog.html">Каталог</a></li>
@@ -123,20 +132,20 @@
 				+7(812)555-05-55
 			</p>
 				
-			<ul>
+			<ul class="footer-navigation-2">
 				<li><a href="#">Материалы</a></li>
 				<li><a href="#">Техника</a></li>
 				<li><a href="#">Инструмент</a></li>
 				<li><a href="#">Спецпредложения</a></li>
 			</ul>
 		</section>
-		<section>
+		<section class="footer-bottom">
 			<p>
 				© 2010-2019 Компания «Техномарт»
 				Все права защищены
 			</p>
 			
-			<div>
+			<div class="social">
 				<ul>
 	  				<li><a href="#">Вконтакте</a></li>
 	  				<li><a href="#">Фейсбук</a></li>
@@ -144,12 +153,12 @@
 	  			</ul>
 			</div>
 
-			<div>
+			<div class="feedback">
 				<p>Обратная связь:</p>
 				<a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
 			</div>
 
-			<div>
+			<div class="executor">
 				<p>Разработано &mdash;</p>
 				<a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
 			</div>
