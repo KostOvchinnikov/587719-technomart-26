@@ -61,7 +61,7 @@ a {
 .italic p {
 	font-size: 16px;
 	font-weight: 400;
-	line-height: 23;
+	line-height: 23px;
 	font-style: italic;
 	color: #ee3643;
 }
@@ -114,6 +114,10 @@ a {
 	font-weight: 400;
 	line-height: 18px;
 	text-decoration: underline;
+	color: #32425c;
+}
+
+.user-navigation a {
 	color: #32425c;
 }
 
@@ -170,6 +174,7 @@ main h1 {
 	font-size: 30px;
 	font-weight: 400;
 	line-height: 30px;
+	text-transform: uppercase;
 	color: #32425c;
 }
 
@@ -179,6 +184,15 @@ fieldset legend {
 	font-weight: 400;
 	line-height: 30px;
 	color: #000000;
+}
+
+.filter h2 {
+	font-family: "PT-Sans", Arial, sans-serif;
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 18px;
+	color: #000000;
+	text-transform: uppercase;
 }
 
 .filter fieldset {
