@@ -82,6 +82,24 @@ a {
 	color: #32425c;
 }
 
+.login li {
+	list-style: none;
+	font-size: 21px;
+	font-weight: 400;
+	line-height: 21px;
+	color: #000000;
+}
+
+.login a {
+	color: #000000;
+	background-color: #ffffff;
+}
+
+.login a:hover,
+.login a:focus {
+	color: #ee3643 ;
+}
+
 .username {
 	background-color: #ffffff;
 	font-size: 21px;
@@ -207,8 +225,12 @@ main p {
 	color: #000000;
 }
 
-.items li {
+.catalog-list {
 	list-style: none;
+}
+
+.catalog-item {
+	border: solid 1px #e5e5e5;
 }
 
 .catalog-item h3 {
@@ -232,7 +254,7 @@ main p {
 	font-weight: 700;
 	line-height: 18px;
 	text-align: center;
-	color: #999999;
+	color: #ffffff;
 }
 
 .catalog-item span {
@@ -245,7 +267,7 @@ main p {
 	text-decoration: line-through;
 }
 
-.items .buy {
+.catalog-item .buy {
 	font-size: 14px;
 	font-weight: 400;
 	line-height: 18px;
@@ -255,13 +277,13 @@ main p {
 	background-color: #63a63e;
 }
 
-.items .buy:hover,
-.items .buy:focus {
+.catalog-item .buy:hover,
+.catalog-item .buy:focus {
 	background-color: #367315;
 	color: #ffffff;
 }
 
-.items .bookmarks {
+.catalog-item .bookmarks {
 	font-size: 14px;
 	font-weight: 400;
 	line-height: 18px;
@@ -270,8 +292,8 @@ main p {
 	border: 3px solid #63a63e;
 }
 
-.items .bookmarks:hover,
-.items .bookmarks:focus {
+.catalog-item .bookmarks:hover,
+.catalog-item .bookmarks:focus {
 	color: #32425c;
 	border-color: #32425c;
 }
@@ -344,3 +366,6 @@ main p {
   margin: -1px;
 }
 
+.popup {
+	display: none;
+}
