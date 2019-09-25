@@ -1,6 +1,13 @@
 body {
 	margin: 0;
 	padding: 0;
+	
+	/*Временно для сетки
+	background: url("../img/technomart-index.jpg");
+	background-repeat: no-repeat;
+	background-position: top center;
+	width: 1200px;
+	height: 3500px;*/
 
 	font-family: "Cuprum", Arial, sans-serif;
 	font-size: 13px;
@@ -15,10 +22,6 @@ a {
 
 .main-header {
 	background-color: #f4f7f9;
-}
-
-.header-top {
-	background-color: #293449;
 }
 
 .main-logo {
@@ -58,7 +61,7 @@ a {
 	color: #ffffff;
 }
 
-.italic p {
+.italic {
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 23px;
@@ -70,10 +73,12 @@ a {
 	border: solid 3px #ffffff;
 }
 
-.phone-container .phone {
+.phone {
+	display: block;
 	font-size: 21px;
 	line-height: 21px;
 	color: #ee3643;
+	border: solid 3px #ffffff;
 }
 
 .main-header .header-adress {
@@ -228,16 +233,9 @@ main h2 {
 	line-height: 30px;
 	color: #000000;
 	font-weight: 400;
+	text-transform: uppercase;
 }
 
-main p {
-	font-family: "PT-Sans", Arial, sans-serif;
-	font-size: 13px;
-	line-height: 24px;
-	font-weight: 400;
-	text-align: left;
-	color: #000000;
-}
 
 .catalog-list {
 	list-style: none;
@@ -312,6 +310,15 @@ main p {
 	border-color: #32425c;
 }
 
+.about-us p {
+	font-family: "PT-Sans", Arial, sans-serif;
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 24px;
+	text-align: left;
+	color: #000000;
+}
+
 .about-us li {
 	list-style: none;
 	font-size: 18px;
@@ -332,8 +339,6 @@ main p {
 
 .main-footer {
 	color: #ffffff;
-
-	background-color: #32425c;
 }
 
 .main-footer a {
@@ -351,11 +356,6 @@ main p {
 
 .footer-bottom a {
 	color: #ffd180;
-}
-
-
-.footer-bottom {
-	background-color: #293449;
 }
 
 .main-footer li {
@@ -382,4 +382,171 @@ main p {
 
 .popup {
 	display: none;
+}
+
+/* Сеточные стили */
+html,
+body {
+	min-width: 1200px;
+	min-height: 3151px;
+	margin: 0;
+	padding: 0;
+}
+
+.main-header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	margin-bottom: 59px;
+	/* Временно для сетки */
+	min-height: 320px;
+	
+}
+
+
+.main-logo {
+	width: 220px;
+	height: 42px;
+
+	/* Временно для сетки*/
+	/*display: block;*/
+}
+
+.search {
+	margin: 0;
+	padding: 0;
+	width: 270px;
+
+	/*Временно для сетки*/
+	min-height: 42px;
+}
+
+.top-navigation {
+	margin: 0;
+	padding: 0;
+	width: 450px;
+	/*Временно для сетки*/
+	min-height: 42px;
+}
+
+.header-top-wrapper {
+	width: 100%;
+	margin-bottom: 46px;
+
+	background-color: #293449;
+ /* Временно для сетки */
+  	min-height: 42px;
+}
+
+.container {
+	width: 940px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+.header-top-wrapper .container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.header-middle {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 44px;
+}
+
+.italic {
+	width: 196px;
+	padding: 0;
+	margin-left: 53px;
+	/*Временно для сетки*/
+
+	min-height: 60px;
+}
+
+.header-contacts {
+	width: 270px;
+	text-align: center;
+	/*Временно для сетки*/
+	min-height: 68px;
+}
+
+.login {
+	width: 281px;
+
+	/*Временно для сетки*/
+	min-height: 45px;
+}
+
+.main-navigation {
+	width: 940px;
+	margin-bottom: 60px;
+	/*Временно для сетки*/
+	min-height: 60px;
+}
+
+.about-company {
+	margin: 0;
+	padding: 0;
+
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 86px;
+	/*Временно для сетки*/
+	min-height: 536px;
+}
+
+.about-us {
+	margin: 0;
+	padding: 0;
+	width: 542px;
+}
+
+
+figure {
+	margin: 0;
+	padding: 0;
+}
+
+.contacts {
+	margin: 0;
+	padding: 0;
+	width: 300px;
+}
+
+.footer-top-wrapper {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: #32425c;
+
+	/*Временно для сетки*/
+	min-height: 193px;
+}
+
+.footer-bottom-wrapper {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	background-color: #293449;
+	/*Временно для сетки*/
+	min-height: 107px;
+
+}
+
+.footer-top {
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer-logo {
+	width: 220px;
+	/*Временно для сетки*/
+	min-height: 63px;
+}
+
+.footer-bottom {
+	display: flex;
+	justify-content: space-between;
 }
