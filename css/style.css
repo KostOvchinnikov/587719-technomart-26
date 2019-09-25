@@ -131,15 +131,16 @@ a {
 	color: #ee3643;
 }
 
-.mini-nav {
+.breadcrumps {
 	list-style: none;
 	font-family: "PT-Sans", Arial, sans-serif;
 	font-size: 13px;
 	font-weight: 400;
 	line-height: 18px;
+	text-transform: uppercase;
 }
 
-.mini-nav a {
+.breadcrumps a {
 	color: #000000;
 }
 
@@ -171,16 +172,14 @@ a {
 	background-color: #293449;
 }
 
-main .h1-container {
-	background-color: #f2f6f8;
-}
-
-main h1 {
+.page-title {
 	font-size: 30px;
 	font-weight: 400;
 	line-height: 30px;
 	text-transform: uppercase;
 	color: #32425c;
+
+	background-color: #f2f6f8;
 }
 
 fieldset legend {
@@ -387,8 +386,8 @@ main h2 {
 /* Сеточные стили */
 html,
 body {
-	min-width: 1200px;
-	min-height: 3151px;
+	min-width: 940px;
+	min-height: 2000px;
 	margin: 0;
 	padding: 0;
 }
@@ -425,7 +424,11 @@ body {
 .top-navigation {
 	margin: 0;
 	padding: 0;
-	width: 450px;
+	width: 419px;
+	margin-left: auto;
+	display: flex;
+	justify-content: space-between;
+
 	/*Временно для сетки*/
 	min-height: 42px;
 }
@@ -482,8 +485,14 @@ body {
 .main-navigation {
 	width: 940px;
 	margin-bottom: 60px;
+
 	/*Временно для сетки*/
 	min-height: 60px;
+}
+
+.site-navigation {
+	display: flex;
+	justify-content: space-between;
 }
 
 .about-company {
@@ -504,7 +513,7 @@ body {
 }
 
 
-figure {
+.map {
 	margin: 0;
 	padding: 0;
 }
@@ -540,6 +549,49 @@ figure {
 	justify-content: space-between;
 }
 
+.footer-column-1 {
+	width: 322px;
+	
+	justify-content: space-between;
+	/*Временно*/
+	min-height: 193px;
+}
+
+.footer-navigation-1 {
+	width: 547px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-left: auto;
+	margin-bottom: 45px;
+}
+/*
+.footer-navigation-1 li {
+	margin-left: 60px;
+}
+*/
+
+.footer-column-2 {
+	margin: 0;
+	padding: 0;
+
+	width: auto;
+	/*Временно*/
+	min-height: 193px;
+}
+
+.footer-navigation-2 {
+	width: 524px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-left: auto;
+}
+/*
+.footer-navigation-2 li:not(:first-child) {
+	margin-left: 60px;
+}
+*/
 .footer-logo {
 	width: 220px;
 	/*Временно для сетки*/
@@ -549,4 +601,79 @@ figure {
 .footer-bottom {
 	display: flex;
 	justify-content: space-between;
+}
+
+.breadcrumps {
+	padding: 0;
+	margin: 0;
+	margin-bottom: 24px;
+	/*Временно для сетки*/	
+	min-height: 12px; 
+}
+
+.page-title {
+	margin: 0;
+	margin-bottom: 20px; 
+	padding: 0;
+	/*Временно для сетки*/
+	min-height: 55px;
+}
+
+.filter {
+	width: 220px;
+	/*Временно для сетки*/
+	min-height: 500px;
+}
+
+.catalog {
+	width: 700px;
+	/*Временно*/
+	min-height: 994px;
+}
+
+.catalog-columns {
+	display: flex;
+	justify-content: space-between;
+}
+
+.catalog-item {
+	width: 218px;
+	margin-bottom: 20px;
+	margin-right: 20px;
+	/*Временно*/
+	min-height: 318px;
+}
+
+.catalog-item:nth-child(3n) {
+	margin-right: 0;
+}
+
+.catalog-list {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+
+}
+
+.pagination-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 60px;
+
+	/*Временно*/
+	min-height: 38px;
+}
+
+.pagination-list li {
+	border: solid 1px #e5e5e5;
+	margin-right: 10px;
+	width: 38px;
+}
+
+.pagination-list li:first-child {
+	background-color: #ee3643;
 }
