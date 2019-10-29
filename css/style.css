@@ -85,12 +85,16 @@ img {
 	background-color: #ca2c37;
 }
 
+.main-logo:active {
+	background-color: #ba2732;
+}
+
 .search {
 	width: 270px;
+	position: relative;
 }
 
 .search [type=search] {
-	box-sizing: border-box;
 	width: 100%;
 	padding: 12px 48px;
 	
@@ -104,15 +108,34 @@ img {
 	background-color: #293449;
 }
 
-.search [type=search]:focus {
+.search [type=search]:focus,
+.search [type=search]:active {
 	background-color: #fff;
+	outline: none;
 }
 
-.search .icon-search {
-	background-image: url("../img/icon-search-opacity.svg");
-	background-position: 18px center;
-	background-repeat: no-repeat;
+.search [type=search]:focus + .search-btn path {
+	fill: #ee3643;
+}
 
+.search [type=search]:hover + .search-btn path {
+	fill: #ffffff;
+}
+
+.search .search-btn {
+	position: absolute;
+
+	width: 17px;
+	height: 17px;
+
+	top: 11px;
+	left: 11px;
+	background: none;
+	border: none;
+}
+
+.search-btn path {
+	fill: #c5c5c5;
 }
 
 .search [type=search]::placeholder {
@@ -144,6 +167,11 @@ img {
 	color: #fff;
 	
 	padding: 12px 0;
+}
+
+.top-navigation a:active {
+	opacity: 0.5;
+	background-color: #161d29;
 }
 
 .top-navigation .bookmarks {
@@ -321,23 +349,31 @@ img {
 	color: #ee3643;
 }
 
+
+
+.login a:active {
+	color: rgba(0, 0, 0, 0.3);
+}
+
 .login .enter {
 	padding-left: 47px;
 	padding-right: 26px;
 }
 
-.login .enter::before {
-	content: "";
+.login .icon-login {
 	position: absolute;
+
 	top: 14px;
 	left: 14px;
+}
 
-	width: 20px;
-	height: 17px;
+.login a:hover  path,
+.login a:focus  path {
+	fill: #32425c;
+}
 
-	background-image: url("../img/icon-login.svg");
-	background-position: 0 0;
-	background-repeat: no-repeat;
+.login a:active path {
+	fill: #c5c5c5;
 }
 
 .user-in .username {
@@ -442,6 +478,11 @@ img {
 	background-color: #293449;
 }
 
+.site-navigation a:active {
+	background-color: #1d2739;
+	color: rgba(255, 255, 255, 0.5);
+}
+
 /*Main*/
 
 /*Features*/
@@ -515,6 +556,10 @@ img {
 .features a:hover,
 .features a:focus {
 	background-color: rgba(0, 0, 0, 0.2);
+}
+
+.features a:active {
+	background-color: rgba(0, 0, 0, 0.3);
 }
 
 .features .materials {
@@ -687,6 +732,10 @@ img {
 	background-color: #ca2c37;
 }
 
+.btn:active {
+	background-color: #ba2732;
+}
+
 
 .popular-items-list ul {
 	list-style: none;
@@ -708,7 +757,7 @@ img {
 	margin-right: 20px;
 	margin-bottom: 20px;
 
-	font-family: "PT-Sans", Arial, sans-serif;
+	font-family: "PT Sans", Arial, sans-serif;
 	font-weight: 700;
 	font-size: 17px;
 	line-height: 18px;
@@ -802,11 +851,14 @@ img {
 
 .popular-item .actions .buy-btn,
 .popular-item .actions .bookmark-btn {
+	position: relative;
+
 	display: block;
 	width: 136px;
 	margin: 0 auto;
+	margin-top: 3px;
 	margin-bottom: 7px;
-	padding: 7px 0;
+	padding: 8px 0;
 	text-align: center;
 
 	background-color: #63a63e;
@@ -829,15 +881,47 @@ img {
   	border-bottom-color: #63a63e;
 }
 
+.popular-item .buy-btn::before {
+	content: "";
+	position: absolute;
+
+	top: 10px;
+	left: 12px;
+
+	width: 15px;
+	height: 15px;
+
+	background-image: url("../img/icon-cart.svg");
+	background-position: 0 0;
+	background-repeat: no-repeat;
+
+	opacity: 0.3;
+}
+
+
 .popular-item .buy-btn:hover,
 .popular-item .buy-btn:focus {
 	background-color: #5fbb2d;
 	border-color: #5fbb2d;
 }
 
+.popular-item .buy-btn:hover::before,
+.popular-item .buy-btn:focus::before {
+	opacity: 1;
+}
+
+.popular-item .buy-btn:active {
+	background-color: #518534;
+	border-color: #518534;
+}
+
 .popular-item .bookmark-btn:hover,
 .popular-itm .bookmark-btn:focus {
 	border-color: #32425c;
+}
+
+.popular-item .bookmark-btn:active {
+	opacity: 0.3;
 }
 
 .popular-item .actions {
@@ -920,6 +1004,10 @@ img {
 	box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
 }
 
+.manufacturers .manufacturer-item:active {
+	opacity: 0.3;
+	box-shadow: 0px 4px 10px 0 rgba(41, 52, 73, 0.5);
+}
 /*Services*/
 
 .services-wrapper {
@@ -940,7 +1028,7 @@ img {
 }
 
 .services .container p {
-	font-family: PT-Sans, Arial, sans-serif;
+	font-family: PT Sans, Arial, sans-serif;
 	font-size: 13px;
 	font-weight: 400;
 	line-height: 24px;
@@ -1062,7 +1150,7 @@ img {
 	width: 379px;
 	padding-right: 142px;
 
-	font-family: "PT-Sans", Arial, sans-serif;
+	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 13px;
 	font-weight: 400;
 	line-height: 24px;
@@ -1147,12 +1235,11 @@ img {
 }
 
 .about-company p {
-	font-family: "PT-Sans", Arial, sans-serif;
+	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 13px;
 	font-weight: 400;
 	line-height: 24px;
 	color: #000000;
-	letter-spacing: -0.5px;
 
 	padding: 0;
 	margin: 0;
@@ -1220,6 +1307,10 @@ img {
 	background-color: #ca2c37;
 }
 
+.about-company .contacts-btn:active {
+	background-color: #ba2732;
+}
+
 .delivery-ul {
 	width: 220px;
 }
@@ -1257,7 +1348,7 @@ img {
 }
 
 .breadcrumbs a {
-	font-family: "PT-Sans", Arial, sans-serif;
+	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 12px;
 	font-weight: 400;
 	line-height: 18px;
@@ -1317,7 +1408,7 @@ img {
 	margin: 0;
 	padding: 0;
 
-	font-family: "PT-Sans", Arial, sans-serif;
+	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 13px;
 	font-weight: 400;
 	line-height: 18px;
@@ -1352,7 +1443,7 @@ img {
 
 	list-style: none;
 	
-	font-family: "PT-Sans", Arial, sans-serif;
+	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 12px;
 	font-weight: 400;
 	line-height: 18px;
@@ -1426,12 +1517,11 @@ img {
 }
 
 .filter-item legend {
-	font-family: "PT-Sans", Arial, sans-serif;
+	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 16px;
 	font-weight: 700;
 	line-height: 15px;
 	text-transform: uppercase;
-	letter-spacing: -1px;
 	color: #000000;
 	
 	margin-bottom: 20px;
@@ -1504,7 +1594,7 @@ img {
 	width: 95px;
 	padding: 10px 10px;
 
-	font-family: "PT-Sans". Arial, sans-serif;
+	font-family: "PT Sans". Arial, sans-serif;
 	font-size: 17px;
 	font-weight: 400;
 	line-height: 18px;
@@ -1542,13 +1632,12 @@ img {
 }
 
 .filter-list li {
-	font-family: "PT-Sans", Arial, sans-serif;
+	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 15px;
 	font-weight: 400;
 	line-height: 20px;
 	text-transform: uppercase;
 	color: #000000;
-	letter-spacing: -1px;
 
 	padding-left: 34px;
 	margin-bottom: 20px;
@@ -1631,7 +1720,7 @@ img {
 .filter-button {
 	display: block;
 
-	font-family: "PT-Sans", Arial, sans-serif;
+	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 12px;
 	font-weight: 400;
 	line-height: 18px;
@@ -1669,7 +1758,7 @@ img {
 	margin-right: 20px;
 	margin-bottom: 20px;
 
-	font-family: "PT-Sans", Arial, sans-serif;
+	font-family: "PT Sans", Arial, sans-serif;
 	font-weight: 700;
 	font-size: 17px;
 	line-height: 18px;
@@ -1843,13 +1932,12 @@ img {
 .pagination-list a {
 	display: block;
 
-	font-family: "PT-Sans", Arial, sans-serif;
+	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 12px;
 	font-weight: 400;
 	line-height: 18px;
 	color: #000000;
 	text-transform: uppercase;
-	letter-spacing: 0px;
 	text-align: center;
 
 	margin-top: 31px;
@@ -1897,11 +1985,10 @@ img {
 	margin: 0;
 	padding: 0;
 
-	font-family: "PT-Sans", Arial, sans-serif;
+	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 13px;
 	font-weight: 400;
 	line-height: 24px;
-	letter-spacing: -0.5px;
 
 	padding-bottom: 68px;
 }
@@ -1942,6 +2029,10 @@ img {
 .footer-row-1 .footer-logo:hover,
 .footer-row-1 .footer-logo:focus {
 	background-color: #ca2c37;
+}
+
+.footer-row-1 .footer-logo:active {
+	background-color: #ba2732;
 }
 
 .footer-row-1 .footer-nav-1 {
@@ -2013,6 +2104,12 @@ img {
 .footer-nav-2 a:hover,
 .footer-nav-2 a:focus {
 	text-decoration: underline;
+}
+
+.footer-nav-1 a:active,
+.footer-nav-2 a:active {
+	text-decoration: none;
+	opacity: 0.5;
 }
 
 /*Footer-Bottom*/
@@ -2168,14 +2265,13 @@ img {
 
 	width: 620px;
 
-	padding: 37px 80px;
+	padding: 0 80px;
 	padding-top: 55px;
-	padding-bottom: 100px;
+	padding-bottom: 80px;
 
 	z-index: 20;
 
 	box-shadow: 0px 20px 40px 0 rgba(0, 0, 0, 0.75), inset 0 7px 0 0 #ee3643, inset 0 -112px 0 0 #f4f4f4;
-		
 }
 
 .modal-close {
@@ -2208,6 +2304,9 @@ img {
 }
 
 .modal-feedback p {
+	margin: 0;
+	padding: 0;
+
 	font-size: 18px;
 	font-weight: 400;
 	line-height: 18px;
@@ -2216,7 +2315,7 @@ img {
 }
 
 .modal-feedback ::-webkit-input-placeholder {
-	font-family: "PT-Sans", Arial, sans-serif;
+	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 13px;
 	font-weight: 400;
 	line-height: 18px;
@@ -2236,11 +2335,13 @@ img {
 .modal-feedback input,
 .modal-feedback textarea {
 	width: 100%;
-	margin-top: 13px;
-	padding: 6px 16px;
+	margin-top: 9px;
+	margin-bottom: 22px;
+	padding: 6px 13px;
 
 	border: 2px solid #dee3e4;
 	border-radius: 3px;
+	outline: none;
 }
 
 .modal-feedback input:hover,
@@ -2257,7 +2358,7 @@ img {
 
 .modal-feedback .send {
 	position: relative;
-	top: 65px;
+	top: 45px;
 	font-size: 14px;
 	font-weight: 400;
 	line-height: 18px;
