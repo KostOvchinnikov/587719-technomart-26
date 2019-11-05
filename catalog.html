@@ -5,7 +5,7 @@
 	<title>Каталог товаров - Интернет магазин «Техномарт»</title>
 	<link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7CPT+Sans:400,400i,700&display=swap&subset=cyrillic" rel="stylesheet">
 	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style.min.css">
 </head>
 <body class="inner-page">
 	<header class="main-header">
@@ -408,36 +408,7 @@
 
 	</section>
 
-	<script>
-		var productLink = document.querySelector(".buy-btn");
-		
-		var productPopup = document.querySelector(".modal-product");
-		var productClose = productPopup.querySelector(".modal-close");
-		var productContinue = productPopup.querySelector(".continue");
-
-		productLink.addEventListener("click", function (evt) {
-  			evt.preventDefault();
-  			productPopup.classList.add("modal-show");
-  		});
-
-  		productClose.addEventListener("click", function (evt) {
-  			evt.preventDefault ();
-  			productPopup.classList.remove("modal-show");
-  		});
-
-  		productContinue.addEventListener("click", function (evt) {
-  			evt.preventDefault ();
-  			productPopup.classList.remove("modal-show");
-  		});
-
-  		window.addEventListener("keydown", function (evt) {
-  			if (evt.keyCode === 27) {
-  				if (productPopup.classList.contains("modal-show")) {
-  					evt.preventDefault();
-  					productPopup.classList.remove("modal-show");
-  				}
-  			}
-  		});
-	</script>
+	<script src="js/script.min.js"></script>
 		
 </body>
+</html>

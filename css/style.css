@@ -817,22 +817,32 @@ img {
 
 	width: 0px;
 	height: 10px;
-
-	background-color: #ffffff;
-	border-radius: 50%;
-
 	margin-right: 8px;
 }
 
-.slider-radio-btn .active-btn::before {
+.slider-radio-btn .radio:before {
+	position: absolute;
+	content: "";
+
+	top: 0;
+	left: 0;
+
+	width: 10px;
+	height: 10px;
+
+	background-color: #ffffff;
+	border-radius: 50%;
+}
+
+.slider-radio-btn .active-btn::after {
 	position: absolute;
 	content: "";
 
 	top: 2px;
 	left: 2px;
 
-	width: 8px;
-	height: 8px;
+	width: 6px;
+	height: 6px;
 
 	background-color: #ee3643;
 	border-radius: 50%;
@@ -1461,12 +1471,12 @@ img {
 
 }
 
-.about-company .delivery li {
+.delivery li {
 	position: relative;
 	margin-bottom: 20px;
 }
 
-.about-company .delivery li::before {
+.delivery li::before {
 	content: "";
 	position: absolute;
 
@@ -1686,11 +1696,11 @@ img {
 	cursor: pointer;
 }
 
-.arrows .arrow path {
+.arrow path {
 	fill: #c5c5c5;
 }
 
-.arrows .active-ar path {
+.active-ar path {
 	fill: #ee3643;
 }
 
@@ -1698,6 +1708,7 @@ img {
 .arrow:focus path {
 	fill: #000000;
 }
+
 /*Main-Columns*/
 
 .main-columns {
@@ -1706,8 +1717,7 @@ img {
 	justify-content: space-between;
 }
 
-.main-columns .column-1 {
-	
+.main-columns .column-1 {	
 	width: 220px;
 }
 
@@ -2129,11 +2139,8 @@ img {
 
 .footer-top-wrapper {
 	background-color: #32425c;
-
 	margin-top: 0;
-
-	width: 100%;
-	
+	width: 100%;	
 }
 
 .footer-top .footer-row-1 {
@@ -2523,7 +2530,7 @@ img {
 
 	width: 940px;
 	z-index: 30;
-	height: 446px; /*Можно ли задать фиксированную высоту?*/
+	height: 446px;
 	box-shadow: 0px 20px 40px 0 rgba(0, 0, 0, 0.75);
 }
 
@@ -2575,10 +2582,10 @@ img {
 	line-height: 30px;
 	text-align: center;
 	color: #000000;
-	padding-top: 68px;
-	padding-bottom: 68px;
+	padding-top: 44px;
+	padding-bottom: 75px;
 
-	padding-left: 58px;
+	padding-left: 55px;
 	
 }
 
@@ -2586,7 +2593,7 @@ img {
 	content: "";
 
 	position: absolute;
-	top: 46px;
+	top: 26px;
 	left: 0px;
 
 	width: 66px;
@@ -2616,7 +2623,7 @@ img {
 	background-color: #ffffff;
 	border-radius: 3px;
 
-	padding: 14px 45px;
+	padding: 10px 45px;
 
 	margin-bottom: 37px;
 }
