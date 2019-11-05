@@ -80,16 +80,17 @@
 			<div class="row-1">
 				<ul class="feature-items">
 					<li class="feature-item materials">
+						<div class="flag flag-new">Новинка</div>
 						<p>Материалы</p>
-						<a href="#">На любой вкус</a>
+						<a class="features-anc" href="#">На любой вкус</a>
 					</li>
 					<li class="feature-item tools">
 						<p>Инструмент</p>
-						<a href="#">На все случаи</a>
+						<a class="features-anc" href="#">На все случаи</a>
 					</li>
 					<li class="feature-item technics">
 						<p>Техника</p>
-						<a href="#">Для стройки</a>
+						<a class="features-anc" href="#">Для стройки</a>
 					</li>
 				</ul>
 
@@ -98,30 +99,51 @@
 			<div class="row-2">
 				<div class="features-column-1">
 					<div class="slider">
-					<!--
-						<input class="visually-hidden" type="radio" id="product-1" name="toggle">
-						<input class="visually-hidden" type="radio" id="product-2" name="toggle">
-						<div class="slider-controls">
-							<label class="slider-controls-item slider-controls-item-1 visually-hidden" for="product-1">Первый</label>
-							<label class="slider-controls-item slider-controls-item-2 visually-hidden" for="product-2">Второй</label>
-						</div>
-					-->
-					
-						<h3>Дрели</h3>
-						<p>Соседям на радость!</p>
-					
-
+						<ul class="slider-items">
+							<li class="slide-1">								
+								<img src="img/slide-image-1.jpg" alt="Дрели" width="620"
+									height="266">								
+								<div class="slider-text">
+									<h3>Дрели</h3>
+									<p>Соседям на радость!</p>
+								</div>
+							</li>
+							<li class="slide-2">
+								<img src="img/slide-image-2.jpg" alt="Перфораторы" width="620" height="266">								
+								<div class="slider-text">
+									<h3>Перфораторы</h3>
+									<p>Настоящие мужские игрушки</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="slider-controls">
+						<button class="slider-btn prev-btn" type="button">
+							<span class="visually-hidden">Назад</span>
+						</button>
+						<button class="slider-btn next-btn" type="button">
+							<span class="visually-hidden">Вперёд</span>
+						</button>
+						<ul class="slider-radio-btn">
+							<li class="radio-item">
+								<button class="slider-btn radio"><span class="visually-hidden">Первый слайд</span></button>
+							</li>
+							<li class="radio-item">
+								<button class="slider-btn radio active-btn"><span class="visually-hidden">Второй слайд</span></button>
+							</li>
+						</ul>
+						<a class="slider-anc" href="catalog.html">Открыть каталог</a>
 					</div>
 				</div>
 				<div class="features-column-2">
 					<ul>
 						<li class="feature-item discounts">
 							<p>Скидки 50%</p>
-							<a href="#">На 350 товаров</a>
+							<a class="features-anc" href="#">На 350 товаров</a>
 						</li>
 						<li class="feature-item delivery">
 							<p>Доставка</p>
-							<a href="#">Бесплатно</a>
+							<a class="features-anc" href="#">Бесплатно</a>
 						</li>
 					</ul>
 					
@@ -138,7 +160,7 @@
 
 			<div class="popular-items-list">
 				<ul>
-					<li class="popular-item">
+					<li class="catalog-item">
 
 		  				<p class="item-img">
 		  					<img src="img/item-image.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
@@ -153,7 +175,7 @@
 			  				<a href="#" class="bookmark-btn">В закладки</a>
 						</div>	
 					</li>
-					<li class="popular-item">
+					<li class="catalog-item">
 
 		  				<p class="item-img">
 		  					<img src="img/item-1.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
@@ -170,7 +192,7 @@
 
 		  			</li>
 
-		  			<li class="popular-item">
+		  			<li class="catalog-item">
 
 		  				<p class="item-img">
 		  					<img src="img/item-2.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
@@ -187,7 +209,7 @@
 
 		  			</li>
 
-		  			<li class="popular-item">
+		  			<li class="catalog-item">
 
 		  				<p class="item-img">
 			  				<img src="img/item-1.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
@@ -257,7 +279,7 @@
 				<div class="container">
 					<h2 class="services-title">Сервисы</h2>
 					
-					<p>
+					<p class="services-title-p">
 						Хороший интернет-магазин отличается от плохого не только ценами!
 						Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
 					</p>
@@ -265,46 +287,38 @@
 					<div class="services-slider">
 						<div class="slider-nav">
 							<ul class="services-slider-nav">
-								<li><a class="services-slider-btn delivery-btn" href="#">Доставка</a></li>
-								<li><a class="services-slider-btn" href="#">Гарантии</a></li>
-								<li><a class="services-slider-btn" href="#">Кредит</a></li>
+								<li><button class="services-slider-btn delivery-btn active-serv-btn" type="button">Доставка</button></li>
+								<li><button class="services-slider-btn" type="button">Гарантии</button></li>
+								<li><button class="services-slider-btn" type="button">Кредит</button></li>
 							</ul>
-						</div>
-						<div class="services-slider-items">
-							<ul>
-								<li class="services-slider-item">
-									<div class="delivery-slide">
-										<h3>Доставка</h3>
-										<p>
-											Мы с удовольствием доставим ваш товар прямо<br> 
-											к вашему подъезду совершенно бесплатно!
-											Ведь мы неплохо заработаем,<br> 
-											поднимая его на ваш этаж!
-										</p>
-									</div>
-								</li>
-								<li class="services-slider-item">
-									<div class="guarantee-slide">
-										<h3>Гарантии</h3>
-										<p>
-											Если купленный у нас товар поломается или заискрит,<br> 
-											а также в случае пожара, спровоцированного его возгоранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.<br>
-											Дом уж восстановите как-нибудь сами.
-										</p>
-									</div>
-								</li>
-								<li class="services-slider-item">
-									<div class="credit-slide">
-										<h3>Кредит</h3>
-										<p>
-											Залезть в долговую яму стало проще!<br>
-											Кредитные консультанты придут вам на помощь.
-										</p>
-										<a href="#">Отправить заявку</a>
-									</div>
-								</li>
-							</ul>
-						</div>
+						</div>						
+						<ul class="services-slider-items">
+							<li class="services-slider-item delivery-slide">
+								<h3>Доставка</h3>
+								<p>
+									Мы с удовольствием доставим ваш товар прямо<br> 
+									к вашему подъезду совершенно бесплатно!
+									Ведь мы неплохо заработаем,<br> 
+									поднимая его на ваш этаж!
+								</p>
+							</li>
+							<li class="services-slider-item guarantee-slide">
+								<h3>Гарантии</h3>
+								<p>
+									Если купленный у нас товар поломается или заискрит,<br> 
+									а также в случае пожара, спровоцированного его возгоранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.<br>
+									Дом уж восстановите как-нибудь сами.
+								</p>									
+							</li>
+							<li class="services-slider-item credit-slide">	
+								<h3>Кредит</h3>
+								<p>
+									Залезть в долговую яму стало проще!<br>
+									Кредитные консультанты придут вам на помощь.
+								</p>
+								<a href="#">Отправить заявку</a>					
+							</li>
+						</ul>
 					</div>
 				</div>
 			</div>
